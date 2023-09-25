@@ -13,6 +13,8 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *swap_a, *swap_b, *temp;
 
+	if (list == NULL)
+		return;
 	temp = (*list)->next;
 	while (temp)
 	{
